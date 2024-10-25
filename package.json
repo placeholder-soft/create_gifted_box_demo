@@ -16,7 +16,6 @@
     "typescript": "^5.6.3"
   },
   "dependencies": {
-    "@nestjs/common": "^10.4.6",
     "node-fetch": "2"
   }
 }

@@ -1,7 +1,4 @@
-import { Logger } from "@nestjs/common";
-import fetch from 'node-fetch';
-
-const logger = new Logger("Create Gift Box");
+import fetch from "node-fetch";
 
 const main = async () => {
   const options = {
@@ -61,15 +58,14 @@ const main = async () => {
     options
   );
 
-  
   if (!res.ok) {
     const data = await res.json();
-    logger.error(res.statusText);
-    logger.error(JSON.stringify(data, null, 2));
+    console.error(res.statusText);
+    console.error(JSON.stringify(data, null, 2));
     return;
   }
 
-  logger.log(await res.text());
+  console.log(await res.text());
 };
 
 main().catch(console.error);
