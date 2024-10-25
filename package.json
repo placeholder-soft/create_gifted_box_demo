@@ -1,0 +1,22 @@
+{
+  "name": "create_gifted_box_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "swc-node src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@swc/core": "^1.7.39",
+    "@types/node-fetch": "2",
+    "swc-node": "^1.0.0",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@nestjs/common": "^10.4.6",
+    "node-fetch": "2"
+  }
+}
