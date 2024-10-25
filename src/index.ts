@@ -61,15 +61,15 @@ const main = async () => {
     options
   );
 
-  const data = await res.json();
-
+  
   if (!res.ok) {
+    const data = await res.json();
     logger.error(res.statusText);
     logger.error(JSON.stringify(data, null, 2));
     return;
   }
 
-  logger.log(data);
+  logger.log(await res.text());
 };
 
 main().catch(console.error);
