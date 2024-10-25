@@ -76,6 +76,7 @@ const createGiftBox = async (
 };
 
 const main = async () => {
+  // We fetched a random NFT from NFTVault here. You should mint and send your NFT into NFVault and then call gifted’s API to have it sent out.
   const nfts = await getNFTsByOwner({
     // Only supports base / base-sepolia, using base-sepolia for staging environment, use base for prod environment
     chain: "base-sepolia",
