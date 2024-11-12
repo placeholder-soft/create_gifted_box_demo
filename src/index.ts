@@ -28,7 +28,7 @@ const createGiftBox = async (
         artworks: [
           {
             // NFT-related information
-            nft_contract: artwork_nft.contract,
+            contract: artwork_nft.contract,
             token_id: artwork_nft.token_id,
             source: artwork_nft.mediaUrl,
             source_metadata: artwork_nft.mediaMetadata,
@@ -44,7 +44,7 @@ const createGiftBox = async (
 
             type: artwork_nft.type,
             // Only support 1, indicating one 1155/721 NFT
-            amount: 1,
+            amount: '1',
           },
         ],
         // Gift box configuration
